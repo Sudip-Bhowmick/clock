@@ -18,7 +18,16 @@ body {
   height: 500px;
   border-radius: 50%;
   background-color: #000;
+  border: 5px solid #fff;
   position: relative;
+  @media (max-width: 600px) {
+    width: 300px;
+    height: 300px;
+  }
+  @media (max-height: 500px) {
+    width: 300px;
+    height: 300px;
+  }
   &::after {
     content: "";
     background-color: #fff;
@@ -44,39 +53,75 @@ body {
     font-size: 2rem;
     font-family: sans-serif;
     padding: 11px;
+    div {
+      transform: rotate(var(--numposition));
+    }
   }
   .number1 {
     --rotation: 30deg;
+    div {
+      --numposition: -30deg;
+    }
   }
   .number2 {
     --rotation: 60deg;
+    div {
+      --numposition: -60deg;
+    }
   }
   .number3 {
     --rotation: 90deg;
+    div {
+      --numposition: -90deg;
+    }
   }
   .number4 {
     --rotation: 120deg;
+    div {
+      --numposition: -120deg;
+    }
   }
   .number5 {
     --rotation: 150deg;
+    div {
+      --numposition: -150deg;
+    }
   }
   .number6 {
     --rotation: 180deg;
+    div {
+      --numposition: -180deg;
+    }
   }
   .number7 {
     --rotation: 210deg;
+    div {
+      --numposition: -210deg;
+    }
   }
   .number8 {
     --rotation: 240deg;
+    div {
+      --numposition: -240deg;
+    }
   }
   .number9 {
     --rotation: 270deg;
+    div {
+      --numposition: -270deg;
+    }
   }
   .number10 {
     --rotation: 300deg;
+    div {
+      --numposition: -300deg;
+    }
   }
   .number11 {
     --rotation: 330deg;
+    div {
+      --numposition: -330deg;
+    }
   }
   .hand {
     --rotation: 0;

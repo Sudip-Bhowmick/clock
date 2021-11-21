@@ -25,7 +25,22 @@ body {
   height: 500px;
   border-radius: 50%;
   background-color: #000;
+  border: 5px solid #fff;
   position: relative;
+}
+
+@media (max-width: 600px) {
+  .clock {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-height: 500px) {
+  .clock {
+    width: 300px;
+    height: 300px;
+  }
 }
 
 .clock::after {
@@ -57,48 +72,97 @@ body {
   padding: 11px;
 }
 
+.clock .number div {
+  -webkit-transform: rotate(var(--numposition));
+          transform: rotate(var(--numposition));
+}
+
 .clock .number1 {
   --rotation: 30deg;
+}
+
+.clock .number1 div {
+  --numposition: -30deg;
 }
 
 .clock .number2 {
   --rotation: 60deg;
 }
 
+.clock .number2 div {
+  --numposition: -60deg;
+}
+
 .clock .number3 {
   --rotation: 90deg;
+}
+
+.clock .number3 div {
+  --numposition: -90deg;
 }
 
 .clock .number4 {
   --rotation: 120deg;
 }
 
+.clock .number4 div {
+  --numposition: -120deg;
+}
+
 .clock .number5 {
   --rotation: 150deg;
+}
+
+.clock .number5 div {
+  --numposition: -150deg;
 }
 
 .clock .number6 {
   --rotation: 180deg;
 }
 
+.clock .number6 div {
+  --numposition: -180deg;
+}
+
 .clock .number7 {
   --rotation: 210deg;
+}
+
+.clock .number7 div {
+  --numposition: -210deg;
 }
 
 .clock .number8 {
   --rotation: 240deg;
 }
 
+.clock .number8 div {
+  --numposition: -240deg;
+}
+
 .clock .number9 {
   --rotation: 270deg;
+}
+
+.clock .number9 div {
+  --numposition: -270deg;
 }
 
 .clock .number10 {
   --rotation: 300deg;
 }
 
+.clock .number10 div {
+  --numposition: -300deg;
+}
+
 .clock .number11 {
   --rotation: 330deg;
+}
+
+.clock .number11 div {
+  --numposition: -330deg;
 }
 
 .clock .hand {
